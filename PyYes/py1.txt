@@ -1,0 +1,6 @@
+What is the maximum possible length of an identifier?,31 characters,63 character,79 characters,none of the mentioned,none of the mentioned
+Which of the following is invalid?,_a = 1,__a = 1,__str__ = 1,none of the mentioned,none of the mentioned
+Which of the following is an invalid variable?,my_string_1,1st_string,foo_,My1,1st_string
+Which of the following is an invalid statement?,abc = 1000000,a b c = 1000 2000 3000,a_b_c=100020003000,a_b+c = 1000000,a b c = 1000 2000 3000
+Which is the correct operator for power(x^y)?,X^y,X**y,X^^y,None of the mentioned,X^y
+Which one of these is floor division?,/,//,%,None of the mentioned,//

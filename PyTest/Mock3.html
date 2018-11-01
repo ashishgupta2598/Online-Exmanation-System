@@ -1,0 +1,197 @@
+<%@ page contentType="text/html; charset=utf-8" language="java" import="java.sql.*" errorPage="" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Ch3-Loop Control</title>
+<style>
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    max-width: 960px;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ul a {
+    text-decoration: none;
+}
+
+article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<header>
+   <h1>MockTest3</h1>
+</header>
+  
+<nav>
+  <ul>
+    <li><a href="#">1.Getting into Python--Basics Syntex,VariableTypes,Operators,Looping</a></li>
+    <li><a href="#">2.Strings,Lists,Tuple,Dictioniries</a></li>
+    <li><a href="#">3.Functions and modules</a></li>
+    <li><a href="#">4.Files I/O</a></li>
+    <li><a href="#">5.Exception Handling</a></li>
+    <h3>Advance Concept</h3>
+    <li><a href="#">6.OOP</a></li>
+    <li><a href="#">7.CGI programming</a></li>
+    <li><a href="#">8.DataBase access</a></li>
+    <li><a href="#">9.Network Programming</a></li>
+    <li><a href="#">10.MultiThread Programming</a></li>
+    <li><a href="#">11.GUI Programming</a></li> 
+  </ul>  
+</nav>
+<article>
+<pre>
+  <form>
+1. Which of the following is the use of function in python?a
+a) <input type="radio" name="q1" >Functions are reusable pieces of programs
+b)<input type="radio" name="q1" > Functions don’t provide better modularity for your application
+c) <input type="radio" name="q1" >you can’t also create your own functions
+d)<input type="radio" name="q1" > All of the mentioned
+<form></form>
+
+2. Which keyword is use for function?c
+a) <input type="radio" name="q2" >Fun
+b)<input type="radio" name="q2" > Define
+c)<input type="radio" name="q2" > Def
+d)<input type="radio" name="q2" > Function
+
+<form></form>
+3. What is the output of the below program?a
+<b><i>
+def sayHello():
+    print('Hello World!') 
+sayHello() 
+sayHello()</i></b>
+a) <input type="radio" name="q3" >Hello World!
+Hello World!
+b) <input type="radio" name="q3" >‘Hello World!’‘Hello World!’
+c)<input type="radio" name="q3" > HelloHello
+d)<input type="radio" name="q3" > None of the mentioned
+<form></form>
+
+4. What is the output of the below program?c
+<b><i>
+def printMax(a, b):
+    if a > b:
+        print(a, 'is maximum')
+    elif a == b:
+        print(a, 'is equal to', b)
+    else:
+        print(b, 'is maximum')
+printMax(3, 4)</i></b>
+a) <input type="radio" name="q4" >3
+b)<input type="radio" name="q4" > 4
+c)<input type="radio" name="q4" > 4 is maximum
+d)<input type="radio" name="q4" >None of the mentioned
+
+<form></form>
+5. What is the output of the below program ?a
+<b><i>
+x = 50
+def func(x):
+    print('x is', x)
+    x = 2
+    print('Changed local x to', x)
+func(x)
+print('x is now', x)</i></b>
+a)<input type="radio" name="q5"> x is now 50
+b)<input type="radio" name="q5" >x is now 2
+c)<input type="radio" name="q5" >x is now 100
+d)<input type="radio" name="q5" >None of the mentioned
+
+
+  </form><form>
+6. What is the output of the below program?b
+<b><i>x = 50
+def func():
+    global x
+    print('x is', x)
+    x = 2
+    print('Changed global x to', x)
+func()
+print('Value of x is', x)</i></b>
+a)<input type="radio" name="q6" > x is 50
+Changed global x to 2
+Value of x is 50
+b) <input type="radio" name="q6" >x is 50
+Changed global x to 2
+Value of x is 2
+c)<input type="radio" name="q6" >x is 50
+Changed global x to 5
+Value of x is 50
+d)<input type="radio" name="q6" >None of the mentioned
+
+<form></form>
+7. What is the output of below program?a
+
+<b><i>def say(message, times = 1):
+    print(message * times)
+say('Hello')
+say('World', 5)</i></b>
+
+a) <input type="radio" name="q7" >Hello
+WorldWorldWorldWorldWorld
+b) <input type="radio" name="q7" >Hello
+World 5
+c) <input type="radio" name="q7" >Hello
+World,World,World,World,World
+d)<input type="radio" name="q7" > Hello
+HelloHelloHelloHelloHello
+<form></form>
+
+8. What is the output of the below program?c
+<b><i>def func(a, b=5, c=10):
+    print('a is', a, 'and b is', b, 'and c is', c)
+ 
+func(3, 7)
+func(25, c = 24)
+func(c = 50, a = 100)</i></b>
+
+a) <input type="radio" name="q8" >a is 7 and b is 3 and c is 10
+a is 25 and b is 5 and c is 24
+a is 5 and b is 100 and c is 50
+b) <input type="radio" name="q8" >a is 3 and b is 7 and c is 10
+a is 5 and b is 25 and c is 24
+a is 50 and b is 100 and c is 5
+c)<input type="radio" name="q8" > a is 3 and b is 7 and c is 10
+a is 25 and b is 5 and c is 24
+a is 100 and b is 5 and c is 50
+d) <input type="radio" name="q8" >None of the mentioned
+
+</pre>
+</form>
+</article>
+</div>
+</body>
+</html>
+
+  
+
+  

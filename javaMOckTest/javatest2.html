@@ -1,0 +1,152 @@
+<%@ page contentType="text/html; charset=utf-8" language="java" import="java.sql.*" errorPage="" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Ch3-Loop Control</title>
+<style>
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    max-width: 960px;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ul a {
+    text-decoration: none;
+}
+
+article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<header>
+   <h1>MockTest1</h1>
+</header>
+  
+<nav>
+  <ul>
+    <li><a href="#">1.Getting Started(Data Types,Etc)
+    </a></li>
+    <li><a href="#">2.Desision Control</a></li>
+    <li><a href="#">3.Loop control</a></li>
+     <li><a href="#">5.Case Control</a></li>
+     <li><a href="#">6.Arrays and Pointers</a></li>
+     <li><a href="#">7.Functions And Structures</a></li>
+     <li><a href="#">8.Dynamic Memory Allocations</a></li>
+  </ul>
+</nav>
+<article>
+
+  <form>
+  1.Which component is used to compile,debug and execute java program?<br>
+  A.<input type="radio" name="q1" value="Bjarne Stroustrup">JVM 
+  B.<input type="radio" name="q1" value="James A. Gosling">JDK 
+  C.<input type="radio" name="q1" value="Dr. E.F. Codd"> JIT 
+  D.<input type="radio" name="q1" value="Dennis Ritchie">JRE 
+  </form>
+  
+  <form>
+2.Which component is responsible for converting byte code into machine specfic code?
+A.<input type="radio" name="q2">JVM
+B.<input type="radio" name="q2">JDK
+C.<input type="radio" name="q2">JIT
+D.<input type="radio" name="q2">JRE
+  </form>
+  
+  <form>
+3.Which component is responsible to run java program?
+A.<input type="radio" name="q3">JVM
+B.<input type="radio" name="q3">JDK
+C.<input type="radio" name="q3">JIT
+D.<input type="radio" name="q3">JRE
+  </form>
+  
+  <form>
+4.Which component is responsible to optmise byte code to machine code?
+A.<input type="radio" name="q4">JVM
+B.<input type="radio" name="q4">JDK
+C.<input type="radio" name="q4">JIT
+D.<input type="radio" name="q4">JRE
+
+  </form>
+  
+  <form>
+5.Which statement is true about java?
+A.<input type="radio" name="q5">Platform independent programing language;
+B.<input type="radio" name="q5">Platform dependent programing language;
+C.<input type="radio" name="q5">Code dependent programing language;
+D.<input type="radio" name="q5">Sequence dependent programing language;
+  </form>
+  
+  <form>
+6.Which of the below is invalid indentifier with main method?
+A.<input type="radio" name="q6">public
+B.<input type="radio" name="q6">static
+C.<input type="radio" name="q6">private
+D.<input type="radio" name="q6">final
+  </form>
+  
+  <form>
+7.Which of the extension of java code files?
+A.<input type="radio" name="q7">.class
+B.<input type="radio" name="q7">.java
+C.<input type="radio" name="q7">.txt
+D.<input type="radio" name="q7">.js
+</form>
+  
+  
+<form>
+8.what is the extension of the compiled java classes?
+A.<input type="radio" name="q8">.class
+B.<input type="radio" name="q8">.java
+C.<input type="radio" name="q8">.txt
+D.<input type="radio" name="q8">.js
+  </form>
+  
+  <form>
+9.How can we identify whether a compilatinon unit is class or interface from a .class file?
+A.<input type="radio" name="q9">java source file header
+B.<input type="radio" name="q9">we cannot differentiate between class and interface .
+C.<input type="radio" name="q9">Exatension of the compilation unit.
+D.<input type="radio" name="q9">The class or interface name should be postfixed with unit type.
+</form>
+  
+  <form>
+10.What is use of interpreter?
+(A) <input type="radio" name="q10">They convert byte code to machine language code.
+(B) <input type="radio" name="q10">They read high level code and execute them.
+(C) <input type="radio" name="q10">They are intermediate between JIT and JVM .
+(D) <input type="radio" name="q10">it is synonym for JIT.
+<p>1.b 2.a 3.d 4.c 5.a 6.c 7.b 8.a 9.a 10.b </p>
+  </form>
+</article>
+</div>
+</body>
+</html>

@@ -1,0 +1,1 @@
+create table py1(Ques varcahr(500),A varcahr(500),B varcahr(500),C varcahr(500),D varcahr(500),Ans varcahr(500));

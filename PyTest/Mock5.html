@@ -1,0 +1,206 @@
+acbdbcabcd
+  <%@ page contentType="text/html; charset=utf-8" language="java" import="java.sql.*" errorPage="" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Ch3-Loop Control</title>
+<style>
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    max-width: 960px;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ul a {
+    text-decoration: none;
+}
+
+article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<header>
+   <h1>MockTest5</h1>
+</header>
+  
+<nav>
+  <ul>
+    <li><a href="#">1.Getting into Python--Basics Syntex,VariableTypes,Operators,Looping</a></li>
+    <li><a href="#">2.Strings,Lists,Tuple,Dictioniries</a></li>
+    <li><a href="#">3.Functions and modules</a></li>
+    <li><a href="#">4.Files I/O</a></li>
+    <li><a href="#">5.Exception Handling</a></li>
+    <h3>Advance Concept</h3>
+    <li><a href="#">6.OOP</a></li>
+    <li><a href="#">7.CGI programming</a></li>
+    <li><a href="#">8.DataBase access</a></li>
+    <li><a href="#">9.Network Programming</a></li>
+    <li><a href="#">10.MultiThread Programming</a></li>
+    <li><a href="#">11.GUI Programming</a></li> 
+  </ul>
+</nav>
+  
+  
+  <article>
+<pre>
+  <form>
+
+1. The code shown below will result in an error if the input value is entered as -5. State whether this statement is true or false.
+a)<input type="radio" name="q1" > True
+b)<input type="radio" name="q1" > False
+  <form></form>
+
+2. What is the output of the code shown below?
+<b><i>
+x=10
+y=8
+assert x>y, 'X too small'
+</i></b>
+a)<input type="radio" name="q2" > Assertion Error
+b)<input type="radio" name="q2" > 10 8
+c)<input type="radio" name="q2" > No output
+d) <input type="radio" name="q2" >108
+  <form></form>
+
+3. What is the output of the code shown below?
+<b><i>
+#generator
+def f(x):
+    yield x+1
+g=f(8)
+print(next(g))</i></b>
+a)<input type="radio" name="q3" > 8
+b)<input type="radio" name="q3" > 9
+c)<input type="radio" name="q3" > 7
+d)<input type="radio" name="q3" > Error
+  <form></form>
+
+4. What is the output of the code shown below?
+<b><i>
+def f(x):
+    yield x+1
+    print("test")
+    yield x+2
+g=f(9)</i></b>
+a)<input type="radio" name="q4" > Error
+b)<input type="radio" name="q4" > test
+c) <input type="radio" name="q4" >test
+10
+12
+d)<input type="radio" name="q4" > No output
+  <form></form>
+
+5. What is the output of the code shown below?
+<b><i>
+def f(x):
+    yield x+1
+    print("test")
+    yield x+2
+g=f(10)
+print(next(g))
+print(next(g))
+</i></b>
+a)<input type="radio" name="q5" > No output
+b)<input type="radio" name="q5" > 11
+test
+12
+c)<input type="radio" name="q5" > 11
+test
+d)<input type="radio" name="q5" > 11
+  <form></form>
+
+6. What is the output of the following code?
+<b><i>
+def a():
+    try:
+        f(x, 4)
+    finally:
+        print('after f')
+    print('after f?')
+a()
+</i></b>
+a)<input type="radio" name="q6" > No output
+b) <input type="radio" name="q6" >after f?
+c) <input type="radio" name="q6" >error
+d) <input type="radio" name="q6" >after f
+  <form></form>
+
+7. What is the output of the code shown?
+<b><i>
+def f(x):
+    for i in range(5):
+        yield i
+g=f(8)
+print(list(g))</i></b>
+a)<input type="radio" name="q7" > [0, 1, 2, 3, 4]
+b)<input type="radio" name="q7" > [1, 2, 3, 4, 5, 6, 7, 8]
+c)<input type="radio" name="q7" > [1, 2, 3, 4, 5]
+d) <input type="radio" name="q7" >[0, 1, 2, 3, 4, 5, 6, 7]
+  <form></form>
+
+8. The error displayed in the code shown below is:
+<b><i>
+import itertools
+l1=(1, 2, 3)
+l2=[4, 5, 6]
+l=itertools.chain(l1, l2)
+print(next(l1))</i></b>
+a)<input type="radio" name="q8" > ‘list’ object is not iterator
+b)<input type="radio" name="q8" > ‘tuple’ object is not iterator
+c)<input type="radio" name="q8" >‘list’ object is iterator
+d)<input type="radio" name="q8" >‘tuple’ object is iterator
+
+  <form></form>
+9. Which of the following is not an exception handling keyword in Python?
+a)<input type="radio" name="q9" > try
+b)<input type="radio" name="q9" > except
+c)<input type="radio" name="q9" > accept
+d)<input type="radio" name="q9" > finally
+
+  <form></form>
+10. What is the output of the code shown below?
+<b><i>
+g = (i for i in range(5))
+type(g)</i></b>
+a)<input type="radio" name="q10" > class <’loop’>
+b)<input type="radio" name="q10" > class <‘iteration’>
+c)<input type="radio" name="q10" > class <’range’>
+d)<input type="radio" name="q10" > class <’generator’>
+ 
+</pre>
+</form>
+</article>
+</div>
+</body>
+</html>
+
+
+  

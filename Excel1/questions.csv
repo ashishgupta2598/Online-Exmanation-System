@@ -1,0 +1,12 @@
+what is the stored in the object obj in following lines of code?,memory address of allocated memory of object B,Null,Any arbitray pointer ,Garbage ,memory address of allocated memory of object B
+Which of the keywords is used to make a class?,class,struct,int,None of the mentioned ,class
+Which of these operators is used to allocate memory for an object? ,malloc,alloc,new,give,new
+Which of these statement is incorrect? ,Every class must contain a main() mathod,Applets do not require a main() method at all ,There can be only one main() method in a program ,main()method must be made public,Every class must contain a main() mathod
+Which of the following is a valid declaration of an object of the class Box?,Box obj=new Box(); ,obj=new Box();,new Box obj;,Box obj=new Box; ,Box obj=new Box(); 
+Which of these is supported by method overriding in java?,Abstraction,Encapulation,"Polymorphism
+",None of the mentioned ,Polymorphism
+Which of these is Not a valid keyword or reserved word in java?,default ,null ,String ,volatile,default 
+Which of the following is a legal identifier in java?,"2variable 
+",#myvar ,none of the above, $_myvar , $_myvar 
+Which is true?,X extends Y is correct if and only if X is a class and Y is an interface,X extends Y is correct if and only if X is a interface and Y is a class,"""X extends Y"" is correct if X and Y are either both classes and Y is a class. ","""X extends Y"" is correct for all combinations of X and Y being classes and/or interfaces. ","""X extends Y"" is correct if X and Y are either both classes and Y is a class. "
+Which operator is used to check object-type at runtime?ternary operator ,ternary operator,instanceof operator,type operator ,length operator,instanceof operator

@@ -1,0 +1,152 @@
+<%@ page contentType="text/html; charset=utf-8" language="java" import="java.sql.*" errorPage="" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Ch3-Loop Control</title>
+<style>
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    max-width: 960px;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ul a {
+    text-decoration: none;
+}
+
+article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<header>
+   <h1>MockTest1</h1>
+</header>
+  
+<nav>
+  <ul>
+    <li><a href="#">1.Getting Started(Data Types,Etc)
+    </a></li>
+    <li><a href="#">2.Desision Control</a></li>
+    <li><a href="#">3.Loop control</a></li>
+     <li><a href="#">5.Case Control</a></li>
+     <li><a href="#">6.Arrays and Pointers</a></li>
+     <li><a href="#">7.Functions And Structures</a></li>
+     <li><a href="#">8.Dynamic Memory Allocations</a></li>
+  </ul>
+</nav>
+<article>
+
+  <form>
+  1.Math class belongs to the package?
+  A.<input type="radio" name="q1"> java.math;
+  B.<input type="radio" name="q1">java.lang;
+  C.<input type="radio" name="q1">java.util;
+  D.<input type="radio" name="q1">none of these;
+  </form>
+  
+  <form>
+2.What class must be extended by all event classes?
+A.<input type="radio" name="q2">java.util.EventListener;
+B.<input type="radio" name="q2">java.awt.AwtEvent;
+C.<input type="radio" name="q2">java.util.EventObject;
+D.<input type="radio" name="q2">java.awt.event.inputEvent;
+  </form>
+  
+  <form>
+3.What is the name of the collection interface interface used to repersents elements in a sequence?
+A.<input type="radio" name="q3">Collection.
+B.<input type="radio" name="q3">Set.
+C.<input type="radio" name="q3">List.
+D.<input type="radio" name="q3">Map.
+  </form>
+  
+  <form>
+4.Which of the following statement is false?
+A.<input type="radio" name="q4">Variables declared inside of interface declaration may be changed by implementing class.
+B.<input type="radio" name="q4">interfaces are designed to support dynamic method resolution at run time.
+C.<input type="radio" name="q4">When an interface method is implemented it must be declared as public. 
+D.<input type="radio" name="q4">Variables declaration are implicitly final.
+
+  </form>
+  
+  <form>
+5.Which of the following classes directly implement set interface?
+A.<input type="radio" name="q5">Vector.
+B.<input type="radio" name="q5">HaseSet.
+C.<input type="radio" name="q5">LinkedList.
+D.<input type="radio" name="q5">HashTable.
+  </form>
+  
+  <form>
+6.TreeMap class is used to implement which one of the following collection interfaces?
+A.<input type="radio" name="q6">Set.
+B.<input type="radio" name="q6">SortedSet.
+C.<input type="radio" name="q6">SortedMap.
+D.<input type="radio" name="q6">List.
+  </form>
+  
+  <form>
+7.Which of the following is the correct syntax for suggesting that the JVM perform garbage collection?
+A.<input type="radio" name="q7">System.free();
+B.<input type="radio" name="q7">System.setGarbageCollection();
+C.<input type="radio" name="q7">System.out.gc();
+D.<input type="radio" name="q7">System.gc();
+</form>
+  
+  
+<form>
+8.For which purpose package are used in java?
+A.<input type="radio" name="q8">Categorizes data.
+B.<input type="radio" name="q8">organizing java classes into namespaces.
+C.<input type="radio" name="q8">for faster compilation.
+D.<input type="radio" name="q8">None of these.
+  </form>
+  
+  <form>
+9.The first statement in java source file?
+A.<input type="radio" name="q9">import statement.
+B.<input type="radio" name="q9">package statement.
+C.<input type="radio" name="q9">main statement.
+D.<input type="radio" name="q9">try()and catch().
+</form>
+
+  <form>
+10.A package is a collection of?
+(A) <input type="radio" name="q10">classes.
+(B) <input type="radio" name="q10">interfaces.
+(C) <input type="radio" name="q10">editing tools.
+(D) <input type="radio" name="q10">classes and interfaces.
+<p>1.b 2.c 3.c 4.a 5.b 6.b 7.d 8.b 9.b 10.d </p>
+  </form>
+</article>
+</div>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<%@ page contentType="text/html; charset=utf-8" language="java" import="java.sql.*" errorPage="" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Ch3-Loop Control</title>
+<style>
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    max-width: 960px;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ul a {
+    text-decoration: none;
+}
+
+article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<header>
+   <h1>MockTest1</h1>
+</header>
+  
+<nav>
+  <ul>
+    <li><a href="#">1.Getting Started(Data Types,Etc)
+    </a></li>
+    <li><a href="#">2.Desision Control</a></li>
+    <li><a href="#">3.Loop control</a></li>
+     <li><a href="#">5.Case Control</a></li>
+     <li><a href="#">6.Arrays and Pointers</a></li>
+     <li><a href="#">7.Functions And Structures</a></li>
+     <li><a href="#">8.Dynamic Memory Allocations</a></li>
+  </ul>
+</nav>
+<article>
+
+  <form>
+  1.Who developed the C programming Launguage?
+  a.<input type="radio" name="q1" value="Bjarne Stroustrup"> 
+  b.<input type="radio" name="q1" value="James A. Gosling"> 
+  c.<input type="radio" name="q1" value="Dr. E.F. Codd"> 
+  c.<input type="radio" name="q1" value="Dennis Ritchie"> 
+  </form>
+  
+  <form>
+2.For 16-bit compiler allowable range for integer constants is ________?
+A.-3.4e38 to 3.4e38
+B.-32767 to 32768
+C.-32668 to 32667
+D.-32768 to 32767
+  </form>
+  
+  <form>
+3.C programs are converted into machine language with the help of
+A.An Editor
+B.A compiler
+C.An operating system
+D.None of these.
+  </form>
+  
+  <form>
+4.Which of the following is not a correct variable type?
+A.float
+B.real
+C.int
+D.double
+
+  </form>
+  
+  <form>
+5.Which of following is not a valid name for a C variable?
+A.Examveda
+B.Exam_veda
+C.Exam veda
+D.Both A and B
+  </form>
+  
+  <form>
+6.Find the output of the following program. void main() { int i=01289; printf("%d", i); }
+A.0289
+B.1289
+C.0713
+D.Syntax error
+  </form>
+  
+  <form>
+7.Find the output of the following program.
+void main()
+{
+   int i=065, j=65;
+   printf("%d %d", i, j);
+}
+A.53 65
+B.65 65
+C.065 65
+D.053 65
+E.Syntax error
+</form>
+  
+  
+<form>
+8.If ASCII value of 'x' is 120, then what is the value of the H, if
+H = ('x' – 'w' ) / 3;
+A.1
+B.2
+C.3
+D.0
+  </form>
+  
+  <form>
+9.What is the difference between a declaration and a definition of a variable?
+A.Both can occur multiple times, but a declaration must occur first.
+B.A definition occurs once, but a declaration may occur many times.
+C.Both can occur multiple times, but a definition must occur first.
+D.A declaration occurs once, but a definition may occur many times.
+</form>
+  
+  <form>
+  #include <stdio.h>
+int main()
+{
+    int i = 3;
+    printf("%d", (++i)++);
+    return 0;
+}
+10.What is the output of the above program?
+(A) 3
+(B) 4
+(C) 5
+(D) Compile-time error
+  </form>
+</article>
+</div>
+</body>
+</html>

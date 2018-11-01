@@ -1,0 +1,181 @@
+aaacaaacaa
+  <%@ page contentType="text/html; charset=utf-8" language="java" import="java.sql.*" errorPage="" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Ch3-Loop Control</title>
+<style>
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    max-width: 960px;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ul a {
+    text-decoration: none;
+}
+
+article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<header>
+   <h1>MockTest4</h1>
+</header>
+  
+<nav>
+  <ul>
+    <li><a href="#">1.Getting into Python--Basics Syntex,VariableTypes,Operators,Looping</a></li>
+    <li><a href="#">2.Strings,Lists,Tuple,Dictioniries</a></li>
+    <li><a href="#">3.Functions and modules</a></li>
+    <li><a href="#">4.Files I/O</a></li>
+    <li><a href="#">5.Exception Handling</a></li>
+    <h3>Advance Concept</h3>
+    <li><a href="#">6.OOP</a></li>
+    <li><a href="#">7.CGI programming</a></li>
+    <li><a href="#">8.DataBase access</a></li>
+    <li><a href="#">9.Network Programming</a></li>
+    <li><a href="#">10.MultiThread Programming</a></li>
+    <li><a href="#">11.GUI Programming</a></li> 
+  </ul>
+</nav>
+  
+  
+  <article>
+<pre>
+  <form>
+  1. Which are the two built-in functions to read a line of text from standard input, which by default comes from the keyboard?
+a)<input type="radio" name="q1" >  Raw_input & Input
+b)<input type="radio" name="q1" >  Input & Scan
+c)<input type="radio" name="q1" >  Scan & Scanner
+d)<input type="radio" name="q1" >  Scanner
+</form><form>
+
+2. What is the output of this program?
+<b><i>
+str = raw_input("Enter your input: ");
+print "Received input is : ", str</i></b>
+a)<input type="radio" name="q2" >  Enter your input: Hello Python
+Received input is : Hello Python
+b)<input type="radio" name="q2" >  Enter your input: Hello Python
+Received input is : Hello
+c)<input type="radio" name="q2" >  Enter your input: Hello Python
+Received input is : Python
+d)<input type="radio" name="q2" >  None of the mentioned
+</form><form>
+
+3. What is the output of this program?
+<b><i>
+str = input("Enter your input: ");
+print "Received input is : ", str</i></b>
+a)<input type="radio" name="q3" >  Enter your input: [x*5 for x in range(2,10,2)].
+Received input is : [x*5 for x in range(2,10,2)].
+b)<input type="radio" name="q3" >  Enter your input: [x*5 for x in range(2,10,2)].
+Received input is : [10, 30, 20, 40].
+c)<input type="radio" name="q3" >  Enter your input: [x*5 for x in range(2,10,2)].
+Received input is : [10, 10, 30, 40].
+d)<input type="radio" name="q3" >  None of the mentioned
+</form><form>
+
+4. Which one of the following is not attributes of file
+a)<input type="radio" name="q4" >  closed
+b)<input type="radio" name="q4" >  softspace
+c)<input type="radio" name="q4" >  rename
+d)<input type="radio" name="q4" >  mode
+
+</form><form>
+5. What is the use of tell() method in python?
+a)<input type="radio" name="q5" >  tells you the current position within the file
+b)<input type="radio" name="q5" >  tells you the end position within the file
+c)<input type="radio" name="q5" >  tells you the file is opened or not
+d<input type="radio" name="q5" > ) none of the mentioned
+</form><form>
+
+6. What is the current syntax of rename() a file?
+a)<input type="radio" name="q6" >  rename(current_file_name, new_file_name)
+b)<input type="radio" name="q6" >  rename(new_file_name, current_file_name,)
+c<input type="radio" name="q6" > ) rename(()(current_file_name, new_file_name))
+d)<input type="radio" name="q6" >  none of the mentioned
+
+</form><form>
+7. What is the current syntax of remove() a file?
+a)<input type="radio" name="q7" >  remove(file_name)
+b)<input type="radio" name="q7" >  remove(new_file_name, current_file_name,)
+c)<input type="radio" name="q7" >  remove(() , file_name))
+d)<input type="radio" name="q7" >  none of the mentioned
+</form><form>
+
+8. What is the output of this program?
+<b><i>
+fo = open("foo.txt", "rw+")
+print "Name of the file: ", fo.name
+ 
+# Assuming file has following 5 lines
+# This is 1st line
+# This is 2nd line
+# This is 3rd line
+# This is 4th line
+# This is 5th line
+ 
+for index in range(5):
+   line = fo.next()
+   print "Line No %d - %s" % (index, line)
+ 
+# Close opend file
+fo.close()</i></b>
+a)<input type="radio" name="q8" >  Compilation Error
+b)<input type="radio" name="q8" >  Syntax Error
+c)<input type="radio" name="q8" >  Displays Output
+d)<input type="radio" name="q8" >  None of the mentioned
+</form><form>
+
+9. What is the use of seek() method in files?
+a)<input type="radio" name="q9" >  sets the file’s current position at the offset
+b)<input type="radio" name="q9" >  sets the file’s previous position at the offset
+c)<input type="radio" name="q9" >  sets the file’s current position within the file
+d)<input type="radio" name="q9" >  none of the mentioned
+</form><form>
+
+10. What is the use of truncate() method in file?
+a)<input type="radio" name="q10" >  truncates the file’s size
+b)<input type="radio" name="q10" >  deletes the content of the file
+c)<input type="radio" name="q10" >  deletes the file’s size
+d)<input type="radio" name="q10" >  none of the mentioned
+ 
+</pre>
+</form>
+</article>
+</div>
+</body>
+</html>
+
+
+  
